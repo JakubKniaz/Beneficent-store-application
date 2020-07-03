@@ -1,0 +1,38 @@
+.three-columns-content {
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #dacd16;
+}
+
+.column-item {
+    width: 20%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .column-number {
+        font: 300 4rem "Open Sans";
+        color: $headerColor;
+    
+    }
+    .column-description {
+        font: 400 1.3rem "Open Sans";
+        color: $mainTextColor;
+        text-transform: uppercase;
+        margin-top: 3rem;
+        letter-spacing: -0.36px;
+    }
+    .column-info {
+        font: 300 0.8rem "Open Sans";
+        color: $mainTextColor;
+        margin-top: 3rem;
+        letter-spacing: -0.32px;
+        line-height: 2rem;
+
+    }
+
+}
