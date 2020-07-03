@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    background: $baseBackgroundColor;
+
+}
+
+.log-nav {
+    height: 2rem;
+    margin-top: 3rem;
+}
+
+.navigation {
+    height: 2rem;
+}
+
+.home-img {
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-size: cover;
+    height: 40rem;
+    width: 40rem;
+    img {
+        height: 30rem;
+        width: 30rem;
+    }
+}
+
+.nav-item {
+    display: inline;
+    list-style-type: none;
+      a {
+        text-decoration: none;
+        padding: 1rem;
+      }
+      .nav-link {
+        color: $mainTextColor;
+        font: 400 1rem "Open Sans";
+        list-style-type: none;
+        height: 0.5rem;
+        width: 0.8rem;
+        &:hover {
+            border: 1px solid $mainTextColor;
+            cursor: pointer;
+        }
+
+      }
+      .nav-link-log {
+        color: $secondTextColor;
+        font: 300 0.7rem "Open Sans";
+        height: 0.5rem;
+        width: 0.8rem;
+        margin: 3rem;
+        &:hover {
+            border: 1px solid $borderColor;
+            cursor: pointer;
+        }
+      }
+}
+
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font: 400 1.8rem "Open Sans";
+    color: $mainTextColor;
+    margin-top: 5rem;
+
+}
+
+.pattern-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 30%;
+    margin-top: 3rem;
+}
+
+.pattern-div-img {
+    background-image: url("../../assets/Decoration.svg");
+    height: 10rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.header-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .form-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $secondTextColor;
+        &:hover {
+            cursor: pointer;
+        }
+        .form-box-text {
+        font: 300 1.5rem "Open Sans";
+        color: $mainTextColor;
+        height: 6rem;
+        width: 10rem;
+        text-transform: uppercase;
+        }
+    }
+}
