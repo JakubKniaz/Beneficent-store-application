@@ -33,10 +33,10 @@ const NavigationBar = () => {
                                 <Link to="aboutUs"><a className="nav-link">O nas</a></Link>
                             </li>
                             <li className="nav-item">
-                                <Link to=""><a className="nav-link">Fundacja i organizacje</a></Link>
+                                <Link to="organizations"><a className="nav-link">Fundacja i organizacje</a></Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="kontakt"><a className="nav-link">Kontakt</a></Link>
+                                <Link to="contact"><a className="nav-link">Kontakt</a></Link>
                             </li>
                         </ul>
                     </nav>
@@ -47,9 +47,8 @@ const NavigationBar = () => {
                     </div>
                     <div className="pattern-div"><div className="pattern-div-img"></div></div>
                     <div className="header-form">
-                        <NavLink to="/login"><div className="form-box"><div className="form-box-text">Oddaj<br/>rzeczy</div></div></NavLink>
-                        <NavLink to="/login"><div className="form-box"><div className="form-box-text">Zorganizuj<br/>zbiórkę</div></div></NavLink>
-
+                        <NavLink to="/login"><button className="main-btn">Oddaj<br/>rzeczy</button></NavLink>
+                        <NavLink to="/login"><button className="main-btn">Zorganizuj<br/>zbiórkę</button></NavLink>
                     </div>
                 </div>
             </div>

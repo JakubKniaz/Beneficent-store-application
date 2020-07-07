@@ -12,7 +12,7 @@
         align-items: center;
         height: 2rem;
         width: 50%;
-        margin-top: 1rem;
+        padding: 2rem;
         .third-pattern {
             background-image: url(../../assets/Decoration.svg);
             width: 100%;
@@ -72,23 +72,22 @@
 
 .third-section-btn {
     background: $baseBackgroundColor;
-
-    .form-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    .main-btn {
+        border-radius: 5px;
+        border: 1px solid $secondTextColor;
+        font: 400 1.6rem "Open Sans";
+        color: $mainTextColor;
+        width: 12rem;
+        height: 6rem;
+        background: $baseBackgroundColor;
+        text-transform: uppercase;
         &:hover {
             cursor: pointer;
-        }
-        .form-box-text {
-            font: 300 1.5rem "Open Sans";
-            color: $mainTextColor;
-            border: 1px solid $secondTextColor;
-            height: 5rem;
-            width: 8rem;
-            text-transform: uppercase;
-            text-decoration-style: none;
+
         }
     }
 }
