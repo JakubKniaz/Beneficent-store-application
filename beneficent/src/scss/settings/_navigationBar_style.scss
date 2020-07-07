@@ -92,20 +92,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    .form-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .main-btn {
+        border-radius: 5px;
         border: 1px solid $secondTextColor;
+        font: 400 1.6rem "Open Sans";
+        color: $mainTextColor;
+        width: 12rem;
+        height: 6rem;
+        background: $baseBackgroundColor;
+        text-transform: uppercase;
         &:hover {
             cursor: pointer;
-        }
-        .form-box-text {
-        font: 300 1.5rem "Open Sans";
-        color: $mainTextColor;
-        height: 6rem;
-        width: 10rem;
-        text-transform: uppercase;
+
         }
     }
 }

@@ -34,8 +34,7 @@ const FourColumns = () => {
 
             </div>
             <div className="third-section-btn">
-                <NavLink to="/login"><div className="form-box"><div className="form-box-text">Oddaj<br/>rzeczy</div></div></NavLink>
-
+            <NavLink to="/login"><button className="main-btn">Oddaj<br/>rzeczy</button></NavLink>
             </div>
 
         </section>
