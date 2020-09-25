@@ -1,0 +1,111 @@
+[
+    {
+        "name": "Fundacja “Dbam o Zdrowie”",
+        "mission": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+        "stuff": "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
+        "type": "foundation"
+    },
+    {
+        "name": "Fundacja “Dla dzieci”",
+        "mission": "Pomoc dzieciom z ubogich rodzin.",
+        "stuff": "ubrania, meble, zabawki",
+        "type": "foundation"
+    },
+    {
+        "name": "Fundacja “Bez domu”",
+        "mission": "Pomoc dla osób nie posiadających miejsca zamieszkania.",
+        "stuff": "ubrania, jedzenie, ciepłe koce",
+        "type": "foundation"
+    },
+    {
+        "name": "Fundacja “Lorem ipsum 4”",
+        "mission": "Curabitur ultrices, purus tempus malesuada dignissim, massa metus.",
+        "stuff": "morbi, ut, efficitur, risus",
+        "type": "foundation"
+
+    },
+    {
+        "name": "Fundacja “Lorem ipsum 5”",
+        "mission": "Donec varius at erat ut tristique. Mauris id ligula sit.",
+        "stuff": "maecenas, placerat, uti, libero",
+        "type": "foundation"
+    },
+    {
+        "name": "Fundacja “Lorem ipsum 6”",
+        "mission": "Sed magna augue, rutrum et lorem eget, sagittis viverra lectus.",
+        "stuff": "sed, hendrerit, luctus, mauris",
+        "type": "foundation"
+    },
+    {
+        "name": "Fundacja “Lorem ipsum 7”",
+        "mission": "Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+        "stuff": "vestibulum, an, metus, pharetra",
+        "type": "foundation"
+    },
+    {
+        "name": "Fundacja “Lorem ipsum 8”",
+        "mission": "Aenean egestas, magna et laoreet porttitor, turpis orci fringilla mi.",
+        "stuff": "donec, eget, consectetur, lorem",
+        "type": "foundation"
+    },
+    {
+        "name": "Fundacja “Lorem ipsum 9”",
+        "mission": "Sed non dolor a tellus varius mattis. Donec lorem enim.",
+        "stuff": "Vestibulum, nec, augue, at",
+        "type": "foundation"
+    },
+    {
+        "name": "Organizacja “Lorem ipsum 1”",
+        "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae.",
+        "stuff": "nunc, iner, tortor, vitae",
+        "type": "organization"
+    },
+    {
+        "name": "Organizacja “Lorem ipsum 2”",
+        "mission": "Aenean sem quam, volutpat sit amet ante at, mattis commodo.",
+        "stuff": "phasellus, ultrices, velit, sed",
+        "type": "organization"
+    },
+    {
+        "name": "Organizacja “Lorem ipsum 3”",
+        "mission": "Nulla vestibulum tincidunt justo sit amet blandit. Aliquam egestas lorem.",
+        "stuff": "mauris, neque, velit",
+        "type": "organization"
+    },
+    {
+        "name": "Organizacja “Lorem ipsum 4”",
+        "mission": "In sit amet nunc non quam dignissim dignissim ac convallis.",
+        "stuff": "sed, pharetra, enim, ut",
+        "type": "organization"
+    },
+    {
+        "name": "Organizacja “Lorem ipsum 5”",
+        "mission": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.",
+        "stuff": "nunc, et, laoreet, magna",
+        "type": "organization"
+    },
+    {
+        "name": "Organizacja “Lorem ipsum 6”",
+        "mission": "Nulla urna quam, faucibus in orci nec, luctus rhoncus tortor.",
+        "stuff": "Nulla, id, imperdiet, lectus",
+        "type": "organization"
+    },
+    {
+        "name": "Zbiórka “Lorem ipsum 1”",
+        "mission": "Proin porttitor, ex vel aliquam porttitor, tellus sem auctor magna, vitae.",
+        "stuff": "curabitur, accumsan, quam, mauris",
+        "type": "collection"
+    },
+    {
+        "name": "Zbiórka “Lorem ipsum 2”",
+        "mission": "Curabitur scelerisque viverra bibendum. Cras ac porta leo. Nullam ac.",
+        "stuff": "integer, tempor, diam, eu",
+        "type": "collection"
+    },
+    {
+        "name": "Zbiórka “Lorem ipsum 3”",
+        "mission": "Proin leo sapien, volutpat ut bibendum sit amet, euismod quis.",
+        "stuff": "Nullam, malesuada, mollis, tellus",
+        "type": "collection"
+    }
+]

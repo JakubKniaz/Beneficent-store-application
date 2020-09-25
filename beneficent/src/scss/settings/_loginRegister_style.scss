@@ -1,0 +1,123 @@
+.login-section {
+    height: 100vh;
+    background-color: $baseBackgroundColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .login-section-content {
+        width: 35%;
+        height: 100vh;
+    }
+}
+
+.main-title {
+    font: 400 2rem "Open Sans";
+    color: $mainTextColor;
+    text-align: center;
+    letter-spacing: -0.76px;
+    
+}
+.sixth-pattern-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin-top: 1rem;
+    .sixth-pattern {
+        background-image: url(../../assets/Decoration.svg);
+        width: 100%;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.form-content {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $altBackgroundColor;
+    padding: 2rem;
+    .email-input {
+        display: block;
+        border-bottom: 2px solid $secondTextColor;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 2rem;
+        width: 15rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        background: $altBackgroundColor;
+        
+    }
+    .password-input {
+        display: block;
+        border-bottom: 2px solid $secondTextColor;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 2rem;
+        margin-top: 1rem;
+        width: 15rem;
+        margin-bottom: 3rem;
+        background: $altBackgroundColor;
+    }
+    #email {
+        font: 600 1rem "Open Sans";
+        color: $mainTextColor;
+        margin-bottom: 3rem;
+        text-align: right;
+        
+    }
+    #password {
+        font: 600 1rem "Open Sans";
+        color: $mainTextColor;
+        text-align: right;
+    }
+}
+
+.buttons-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    background: $altBackgroundColor;
+    width: 100%;
+
+    .log-btn {
+        border: none;
+        font: 400 1rem "Open Sans";
+        color: $mainTextColor;
+        width: 7rem;
+        height: 3rem;
+        background: $altBackgroundColor;
+        &:hover {
+            cursor: pointer;
+            border: 1px solid $secondTextColor;
+            border-radius: 5px;
+            background: $baseBackgroundColor;
+        }
+    }
+}
+
+.signOut-btn {
+    border: none;
+    color: $secondTextColor;
+    font: 300 0.7rem "Open Sans";
+    background: $baseBackgroundColor;
+    height: 3rem;
+    width: 5rem;
+        &:hover {
+            border: 1px solid $borderColor;
+            cursor: pointer;
+        }
+}
+
+.page-btn-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

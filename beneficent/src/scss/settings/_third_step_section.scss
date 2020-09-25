@@ -1,0 +1,71 @@
+#location-form {
+    background: $altBackgroundColor;
+    font: 400 1rem "Open Sans";
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.help-title {
+    font: 600 1rem "Open Sans";
+    color: #000000;
+    margin-top: 1.5rem;
+
+}
+
+
+.buttons-div {
+    margin-top: 2rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    &:nth-child(3) {
+        flex-wrap: wrap;
+    }
+}
+.choose-btn {
+    height: 2.2rem;
+    width: 7.5rem;
+    padding: 0.3rem;
+    font: 400 0.7rem "Open Sans";
+    color: $mainTextColor;
+    background: #F0F1F1;
+    border: 1px solid $secondTextColor;
+    margin: 0.5rem;
+    &:hover {
+        cursor: pointer;
+        background: #d1d0d2;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+    &:nth-child(3) {
+        flex-wrap: wrap;
+    }
+}
+
+.textarea-div {
+    margin-top: 2rem;
+}
+
+.textarea-info {
+    font: 600 1rem "Open Sans";
+    color: #000000;
+}
+
+.textarea-form {
+    display: block;
+    width: 25rem;
+    height: 2rem;
+    background: #F0F1F1;
+    margin: auto 0;
+    margin-top: 1.5rem;
+}
+
+.third-step-btn {
+    margin-top: -3rem;
+    margin-left: 0;
+}
+
+.submit-btn-sec {
+    margin-left: 5rem;
+}
