@@ -9,6 +9,7 @@
 .log-nav {
     height: 2rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .navigation {
@@ -103,7 +104,6 @@
         text-transform: uppercase;
         &:hover {
             cursor: pointer;
-
         }
     }
 }

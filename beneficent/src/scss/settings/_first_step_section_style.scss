@@ -1,0 +1,76 @@
+.attention-div {
+    height: 7rem;
+    background-color: #FAD648;
+    .attention-content {
+        display: block;
+        height: 7rem;
+    }
+    .important-text {
+        font: 600 1.5rem "Open Sans";
+        color: $mainTextColor;
+        margin-bottom: 0.7rem;
+        padding-top: 1rem;
+        text-align: left;
+    }
+    .attention-text {
+        font: 400 1rem "Open Sans";
+        color: $mainTextColor;
+        text-align: left;
+    }
+}
+
+.step-content {
+    background-image: url(../../assets/Background-Form.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50rem;
+}
+
+.step-number {
+    font: 400 0.8rem "Open Sans";
+    color: $mainTextColor;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.step-info {
+    font: 600 1.5rem "Open Sans";
+    color: $mainTextColor;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.checkbox-one {
+   display: block;
+    
+   
+}
+
+.checkbox-description {
+    font: 400 1.2rem "Open Sans";
+    color: #000000;
+}
+
+#step-one {
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.submit-btn {
+    font: 400 1.2rem "Open Sans";
+    height: 3rem;
+    width: 9rem;
+    border: 1px solid $secondTextColor;
+    border-radius: 5px;
+    background: #F0F1F1;
+    margin-top: 5rem;
+    &:hover {
+        cursor: pointer;
+        background: #d1d0d2;
+    }
+}
+
+.submit-btn-sec {
+    margin-left: 5rem;
+}

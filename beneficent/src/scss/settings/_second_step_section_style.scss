@@ -1,0 +1,24 @@
+.submit-btn-div {
+    display: flex;
+    margin-top: 8rem;
+    margin-left: 0;
+}
+
+#baggy {
+    font: 400 1.2rem "Open Sans";
+    color: $mainTextColor;
+}
+
+#bag-quantity {
+    margin-left: 3rem;
+    background: $altBackgroundColor;
+    font: 400 1rem "Open Sans";
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.submit-div-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

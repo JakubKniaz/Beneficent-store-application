@@ -1,0 +1,42 @@
+.data-form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.address-text, .time-text {
+    font: 600 1rem "Open Sans";
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+#street, #city, #code, #phone, #date, #time, #comment {
+    font: 600 0.7rem "Open Sans";
+    color: #000000;
+    display: block;
+
+}
+
+.street-input, .city-input, .code-input, .phone-input, .date-input, .time-input, .comment-input {
+    height: 2rem;
+    width: 10rem;
+    border: 1px solid $secondTextColor;
+    display: block;
+    background: #F0F1F1;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.comment-input {
+    height: 6rem;
+}
+
+.time-form-div {
+    margin-left: 0;
+}
+
+.addres-form-div {
+    margin-left: 0;
+    margin-right: 10rem;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import {
-    HashRouter,
+    BrowserRouter,
     Switch, 
     Route, 
     Redirect
@@ -21,30 +21,28 @@ import Summary from './components/Summary';
 import Thanks from './components/Thanks';
 import LoggedIn from './components/LoggedIn';
 import AboutUs from './components/AboutUs';
+import OrganizationSection from './components/OrganizationsSection';
+import FourStepSection from './components/FourStepSection';
 
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Layout} />
           <Route path="/login" component={Login}/>
           <Route path="/logout" component={Logout}/>
           <Route path="/register" component={Register}/>
-          <Route path="/" component={LoggedIn}/>
-          <Route path="/" component={AboutUs}/>
-          <Route path="/" component={OrganizationsSection}/>
-          <Route path="/give-things" component={FirstStepSection}/>
-          <Route path="/give-things" component={SecondStepSection}/>
-          <Route path="/give-things" component={SecondStepOpen}/>
-          <Route path="/give-things" component={ThirdStepSection}/>
-          <Route path="/give-things" component={ThirdStepOpen}/>
-          <Route path="/give-things" component={FourthStepSection}/>
-          <Route path="/give-things" component={Summary}/>
-          <Route path="/give-things" component={Thanks}/>
+          <Route path="/pierwszy-krok" component={FirstStepSection}/>
+          <Route path="/drugi-krok" component={SecondStepSection}/>
+          <Route path="/trzeci-krok" component={ThirdStepSection}/>
+          <Route path="/oddaj" component={FourthStepSection}/>
+          <Route path="/czwarty-krok" component={FourStepSection}/>
+          <Route path="/summary" component={Summary}/>
+          <Route path="/thanks" component={Thanks}/>
           <Redirect to="/"/>
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

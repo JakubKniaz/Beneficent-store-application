@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20rem;
+    height: 15rem;
     .org-info {
         font: 400 1.2rem "Open Sans";
         color: $mainTextColor;
@@ -68,18 +68,24 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        border-bottom: 1px solid $secondTextColor;
+        flex-direction: column;
         &:last-child {
             border-bottom: none;
         }
         .org-title {
-            font: 400 1rem "Open Sans";
+            font: 400 1.2rem "Open Sans";
             color: $mainTextColor;
             padding: 1rem;
+            margin-left: 0rem;
             .org-mission {
-                font: 400 0.7rem "Open Sans";
+                font: 600 0.7rem "Open Sans";
                 color: $mainTextColor; 
             }
+        }
+        .org-stuff {
+            font: 400 0.9rem "Open Sans";
+            color: $mainTextColor;
+            margin-right: 0rem;
         }
     }
 }

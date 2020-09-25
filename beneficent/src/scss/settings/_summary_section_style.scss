@@ -1,0 +1,96 @@
+.summary-title {
+    font: 600 1.5rem "Open Sans";
+    color: #000000;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sum-give {
+    font: 600 1rem "Open Sans";
+    color: #000000;
+    padding-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.icon-pic {
+    height: 2rem;
+    width: 2rem;
+    margin: 0;
+    background-image: url(../../assets/Icon-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.icon-pic-sec {
+    height: 2rem;
+    width: 2rem;
+    margin: 0;
+    margin-top: 0.6rem;
+    
+    background-image: url(../../assets/Icon-4.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-sum {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.icon-info, .icon-info-loc {
+    font: 600 0.8rem "Open Sans";
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 0.6rem;
+}
+
+.summary-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+.sum-info-title {
+    font: 600 1rem "Open Sans";
+    color: #000000;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sum-info {
+    font: 400 0.8rem "Open Sans";
+    color: #000000;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sum-info-get {
+    margin-left: 3rem;
+    font: 400 0.8rem "Open Sans";
+    color: #000000;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.all-sum-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sum-right, .sum-left {
+    margin-left: 0;
+
+}
+
+.sum-left {
+    margin-right: 7rem;
+}
+
+.summary-step-btn {
+    margin-left: 0;
+    // margin-top: 0;
+}

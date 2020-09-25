@@ -1,7 +1,63 @@
-import React from 'react';
-import {NavLink} from 'react-router-dom';
+import React, { useState, useEffect, Component } from 'react';
 
-const OrganizationSection = () => {
+const OrganizationSection = props => {
+    const [organizations, setOrganizations] = useState([]);
+    const [type, setType] = useState('foundation');
+    const [currentPage, setCurrentPage] = useState(1);
+    const [organizationsPerPage, setOrganizationsPerPage] = useState(3);
+
+    useEffect(() => {
+        const queryParams = '?orderBy="type"&equalTo="' + type + '"';
+        const url = 'https://beneficent-store-application.firebaseio.com/organizations.json' + queryParams;
+        
+        fetch(url)
+        .then(response => response.json())
+        .then(obj => {
+            const fetchOrganizations = [];
+            for (let key in obj) {
+                fetchOrganizations.push ({
+                    ...obj[key],
+                    id: key
+                });
+            }
+            setOrganizations(fetchOrganizations);
+            setCurrentPage(1);
+        })
+    }, [type]);
+    if(organizations === null) {
+        return <h1>Wczytywanie...</h1>
+    }
+
+    // handleClick(event) {
+    //     this.setState({
+    //       currentPage: Number(event.target.id)
+    //     });
+    //   }
+
+    
+     const handleClick = (e) => {
+         const number = e.target.name
+            setCurrentPage(Number(number))
+        }
+       
+
+    const indexOfLastOrganization = currentPage * organizationsPerPage;
+    const indexOfFirstOrganizations = indexOfLastOrganization - organizationsPerPage;
+    const currentOrganizations = organizations.slice(indexOfFirstOrganizations, indexOfLastOrganization);
+    const pageNumbers = [];
+        for (let i=1; i <= Math.ceil(organizations.length / organizationsPerPage); i++) {
+            pageNumbers.push(i);
+        }
+
+
+    // getOrganizationItems = () => {
+    //     // const pgs = Math.ceil(organizations.length / 3);
+    //     // console.log(pgs);
+    // }
+
+    
+
+
     return (
         <section id="organizations" className="fifth-section container">
             <div className="main-title">Komu pomagamy?</div>
@@ -10,13 +66,13 @@ const OrganizationSection = () => {
            </div>
            <div className="organizations-columns">
                <div class="box-organizations">
-                   <NavLink to="/login"><button className="btn-organization">Fundacjom</button></NavLink>
+                   <button className="btn-organization" onClick= { () => setType('foundation')}>Fundacjom</button>
                </div>
                <div class="box-organizations">
-                   <NavLink to="/login"><button className="btn-organization">Organizacjom<br/>pozarządowym</button></NavLink>
+                   <button className="btn-organization" onClick= { () => setType('organization')}>Organizacjom<br/>pozarządowym</button>
                </div>
                <div class="box-organizations">
-                   <NavLink to="/login"><button className="btn-organization">Lokalnym<br/>zbiórkom</button></NavLink>
+                   <button className="btn-organization" onClick= { () => setType('collection')}>Lokalnym<br/>zbiórkom</button>
                </div>
            </div>
            <div className="organizations-description">
@@ -26,28 +82,23 @@ const OrganizationSection = () => {
            </div>
            <div className="organizations-form">
                <div className="org-content">
-                   <div className="org-title">Fundacja “Dbam o Zdrowie”<br/><span className="org-mission">Cel i misja: Pomoc osobom znajdującym
-                        się w trudnej sytuacji życiowej.</span>
-
-                   </div>
-                   <div className="org-stuff">ubrania, jedzenie, sprzęt AGD, meble, zabawki</div>
-               </div>
-               <div className="org-content">
-                   <div className="org-title">Fundacja “Dla dzieci”<br/><span className="org-mission">Cel i misja: Pomoc dzieciom z 
-                   ubogich rodzin.</span>
-                   </div>
-                   <div className="org-stuff">ubrania, meble, zabawki</div>
-               </div>
-               <div className="org-content">
-                   <div className="org-title">Fundacja “Bez domu”<br/><span className="org-mission">Cel i misja: Pomoc dla osób nie posiadających
-                    miejsca zamieszkania.</span>
-                   </div>
-                   <div className="org-stuff">ubrania, jedzenie, ciepłe koce</div>
+                   {currentOrganizations.map((organization, index) => {
+                       return (
+                    <>
+                        <div className="org-title" key={index}>{organization.name}<br/><span className="org-mission" key={index}>Cel i misja: {organization.mission}</span></div>
+                        <div className="org-stuff" key={index}>{organization.stuff}</div>
+                    </>
+                       )
+                })}
                </div>
                <div className="btn-content">
-                   <button className="btn-num">1</button>
-                   <button className="btn-num">2</button>
-                   <button className="btn-num">3</button>
+                   {pageNumbers.map((number) => {
+                       if(pageNumbers.length > 1) {
+                            return (
+                                <button key={number} name={number} onClick={ handleClick } className="btn-num">{number}</button>
+                                )
+                            }
+                        })}
                </div>
 
            </div>
